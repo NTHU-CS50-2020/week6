@@ -1,5 +1,8 @@
 import pandas as pd
-from sys import argv
+from sys import argv, exit
+
+if len(argv) != 3:
+    exit("Usage: python dna.py data.csv sequence.txt")
 
 f = open(argv[2])
 dna = f.read()
