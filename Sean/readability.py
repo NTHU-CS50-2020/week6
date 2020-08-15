@@ -13,8 +13,8 @@ for i in range(n):
         w_count += 1
         flag = 0
     elif t[i].isspace():
-        flag=1
-# print(f'l_count: {l_count}, s_count: {s_count}, w_count: {w_count}')
+        flag = 1
+
 L = l_count / w_count * 100
 S = s_count / w_count * 100
 index = 0.0588 * L - 0.296 * S - 15.8
